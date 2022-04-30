@@ -2,8 +2,6 @@ package com.example.tddbyexample;
 
 public class Dollar extends Money{
 
-    private int amount;
-
     public Dollar(int amount) {
         this.amount = amount;
     }
