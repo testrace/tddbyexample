@@ -7,3 +7,5 @@
 - [ ] Money 반올림
 - [x] equals()
 - [ ] hashCode()
+- [ ] equal null
+- [ ] equal object
