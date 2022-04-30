@@ -20,5 +20,6 @@ class DollarTest {
     @Test
     void testEquality() {
         assertThat(new Dollar(5).equals(new Dollar(5))).isTrue();
+        assertThat(new Dollar(5).equals(new Dollar(6))).isFalse();
     }
 }
