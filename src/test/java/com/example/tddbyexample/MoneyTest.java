@@ -31,4 +31,9 @@ class MoneyTest {
         assertThat(five.times(3)).isEqualTo(Money.franc(15));
     }
 
+    @Test
+    void testCurrency() {
+        assertThat(Money.dollar(1).currency()).isEqualTo("USD");
+        assertThat(Money.franc(1).currency()).isEqualTo("CHF");
+    }
 }
