@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class DollarTest {
+class MoneyTest {
 
     @DisplayName("$5 X 2 = $10")
     @Test
