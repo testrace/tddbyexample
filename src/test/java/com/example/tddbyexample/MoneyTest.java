@@ -19,16 +19,7 @@ class MoneyTest {
     void testEquality() {
         assertThat(Money.dollar(5).equals(Money.dollar(5))).isTrue();
         assertThat(Money.dollar(5).equals(Money.dollar(6))).isFalse();
-        assertThat(Money.franc(5).equals(Money.franc(5))).isTrue();
-        assertThat(Money.franc(5).equals(Money.franc(6))).isFalse();
         assertThat(Money.franc(5).equals(Money.dollar(6))).isFalse();
-    }
-
-    @Test
-    void testFrancMultiplication() {
-        Money five = Money.franc(5);
-        assertThat(five.times(2)).isEqualTo(Money.franc(10));
-        assertThat(five.times(3)).isEqualTo(Money.franc(15));
     }
 
     @Test
@@ -37,8 +28,4 @@ class MoneyTest {
         assertThat(Money.franc(1).currency()).isEqualTo("CHF");
     }
 
-    @Test
-    void testDifferentClassEquality() {
-        assertThat(new Money(10, "CHF")).isEqualTo(new Franc(10, "CHF"));
-    }
 }
