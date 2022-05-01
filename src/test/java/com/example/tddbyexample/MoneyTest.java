@@ -37,6 +37,7 @@ class MoneyTest {
         assertThat(reduced).isEqualTo(Money.dollar(10));
     }
 
+    @Test
     void testPlusReturnsSUm() {
         Money five = Money.dollar(5);
         Expression result = five.plus(five);
