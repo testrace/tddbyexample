@@ -34,7 +34,7 @@ class MoneyTest {
         Expression sum = five.plus(five);
         Bank bank = new Bank();
         Money reduced = bank.reduce(sum, "USD");
-        assertThat(reduce).isEqualTo(Money.dollar(10));
+        assertThat(reduced).isEqualTo(Money.dollar(10));
     }
 
 }

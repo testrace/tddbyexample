@@ -1,6 +1,6 @@
 package com.example.tddbyexample;
 
-public class Money {
+public class Money implements Expression {
 
     protected int amount;
     protected String currency;
@@ -22,7 +22,7 @@ public class Money {
         return new Money(amount * multiplier, currency);
     }
 
-    public Money plus(Money money) {
+    public Expression plus(Money money) {
         return new Money(amount + money.amount, currency);
     }
 
