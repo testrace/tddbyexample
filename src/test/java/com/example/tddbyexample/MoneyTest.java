@@ -37,4 +37,12 @@ class MoneyTest {
         assertThat(reduced).isEqualTo(Money.dollar(10));
     }
 
+    void testPlusReturnsSUm() {
+        Money five = Money.dollar(5);
+        Expression result = five.plus(five);
+        Sum sum = (Sum) result;
+        assertThat(sum.augend).isEqualTo(five);
+        assertThat(sum.addend).isEqualTo(five);
+    }
+
 }
