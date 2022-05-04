@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.expression.ExpressionParser;
 
 class MoneyTest {
 
@@ -72,5 +73,15 @@ class MoneyTest {
     @Test
     void testIdentityRate() {
         assertThat(new Bank().rate("USD", "USD")).isEqualTo(1);
+    }
+
+    @Test
+    void testMixedAddition() {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Money result = bank.reduce(fiveBucks.plus(tenFrancs), "USD");
+        assertThat(result).isEqualTo(Money.dollar(10));
     }
 }
