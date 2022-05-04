@@ -4,7 +4,7 @@
 - [ ] $5 + $5 = $10
 - [ ] $5 + $5 에서 Money 반환하기
 - [x] Bank.reduce(Money)
-- [ ] Money에 대한 통화 변환을 수행하는 Reduce
+- [x] Money에 대한 통화 변환을 수행하는 Reduce
 - [ ] Money 반올림
 - [ ] hashCode()
 - [ ] equal null
