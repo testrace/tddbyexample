@@ -5,7 +5,7 @@
 - [ ] hashCode()
 - [ ] equal null
 - [ ] equal object
-- [ ] Sum.plus
+- [x] Sum.plus
 - [ ] Expression.times
 
 
