@@ -5,8 +5,6 @@
 - [ ] hashCode()
 - [ ] equal null
 - [ ] equal object
-- [x] Sum.plus
-- [ ] Expression.times
 
 
 
@@ -25,3 +23,5 @@
 - [x] Dollar/Franc 중복
 - [x] Bank.reduce(Money)
 - [x] Money에 대한 통화 변환을 수행하는 Reduce
+- [x] Sum.plus
+- [x] Expression.times
